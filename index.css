@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0F1035;
+}
+.all-main{
+     height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+
+.main-outer{
+    position: relative;
+    width: 690px;
+    height: 450px;
+    background-color: #647D87;
+    box-shadow: 0px 0px 80px 20px #12888233;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.line{
+    transform: rotate(90deg);
+    width: 100%;
+    height: 3px;
+    color: #647D87;
+    background-color: #0F1035;
+    border: none;
+    z-index: -1;
+}
+
+.hr{
+    width: 60%;
+}
+
+
+.left-bar, .right-bar{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    margin: 10px;
+}
+
+
+.left-bar{
+    left: -5px;
+    background-color: #163558;
+    transition: transform 0.1s ease;
+    transform: translate(0px ,0px);
+    
+}
+
+.right-bar{
+    /* transition: 1s ease-in-out; */
+    transform: translate(0px ,0px);
+    right: -5px;
+    background-color: #665008;
+}
+
+
+.ball{
+    position: absolute;
+    background-color: #1c484b;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    transform:  translate(330px,0px);
+    z-index: 10;
+
+}
+
+
+.animation{
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#lives{
+    /* top: -100px; */
+    /* background-color: azure; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#lives i{
+    transform: scale(1);
+    font-size: 50px;
+    margin: 10px;
+    color: rgb(60, 168, 154);
+
+}
+
+
+
+.last-scale{
+    animation-name: no-scale;
+    animation-duration: 0.5s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes no-scale{
+    100%{
+        transform: scale(0);
+    }
+}
+
+
+
+
+.add-animation
+{
+    animation-name: seize;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes seize{
+    0%{
+        transform:  scaleX(0.8);
+        transform:  scale(0.8);
+    }
+    50%{
+        transform:  scaleX(1);
+        transform:  scale(1);
+        
+        
+    }
+    100%{
+        transform:  scaleX(0.8);
+        transform:  scale(0.8);
+    }
+}
+
+
