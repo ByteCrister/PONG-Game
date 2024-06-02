@@ -1,4 +1,6 @@
+window.addEventListener('DOMContentLoaded', (DOMEvent)=>{
 
+    
 let mainDiv = document.querySelector("#main-outer");
 let remainingHeart = 5;
 
@@ -487,5 +489,4 @@ function nextBounds() {
 }
 
 
-
-
+})
