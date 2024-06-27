@@ -21,6 +21,6 @@ This is a simple Pong game created for a PC layout using HTML, CSS, and JavaScri
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/simple-pong-game.git
+   git clone https://github.com/ByteCrister/PONG-Game.git
 
 
