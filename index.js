@@ -46,7 +46,7 @@ window.addEventListener('keydown', (e) => {
     if (e.key == 'ArrowUp' && 10 + maxUpperBound <= leftY) {
         keyDownInterval = setInterval(() => {
             if (e.key == 'ArrowUp' && 10 + maxUpperBound <= leftY) {
-                leftBar.style.transform = `translate(${leftX}, ${leftY -= 3}px)`;
+                leftBar.style.transform = `translate(${leftX}px, ${leftY -= 3}px)`;
                 console.log('X - ' + leftX + ', Y - ' + leftY);
             } 
 
@@ -57,7 +57,7 @@ window.addEventListener('keydown', (e) => {
     if (e.key == 'ArrowDown' && maxLowerBound - 10 >= leftY) {
         keyDownInterval = setInterval(() => {
             if (e.key == 'ArrowDown' && maxLowerBound - 10 >= leftY) {
-                leftBar.style.transform = `translate(${leftX}, ${leftY += 3}px)`;
+                leftBar.style.transform = `translate(${leftX}px, ${leftY += 3}px)`;
                 console.log('X - ' + leftX + ', Y - ' + leftY);
             } 
 
@@ -414,9 +414,9 @@ function nextBounds() {
 
                 rightX = rightY = leftX = leftY = ballY = 0;
                 ballX = 330
-                leftBar.style.transform = `translate(${leftX}, ${leftY}px)`;
+                leftBar.style.transform = `translate(${leftX}px, ${leftY}px)`;
 
-                rightBar.style.transform = `translate(${rightX}, ${rightY}px)`;
+                rightBar.style.transform = `translate(${rightX}px, ${rightY}px)`;
                 minimizeHeart();
             }, 1000);
 
@@ -475,8 +475,8 @@ function nextBounds() {
 
                 rightX = rightY = leftX = leftY = ballY = 0;
                 ballX = 330
-                leftBar.style.transform = `translate(${leftX}, ${leftY}px)`;
-                rightBar.style.transform = `translate(${rightX}, ${rightY}px)`;
+                leftBar.style.transform = `translate(${leftX}px, ${leftY}px)`;
+                rightBar.style.transform = `translate(${rightX}px, ${rightY}px)`;
                 if (remainingHeart !== 0) {
                     runFirstThrow();
                 }
